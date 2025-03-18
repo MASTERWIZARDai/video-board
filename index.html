@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MASTERWIZARDai's Video & Message Board</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+        .message { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+        #messageForm { margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Video & Message Board</h1>
+
+    <!-- YouTube Video Embed -->
+    <h2>Watch This Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    <p>Add your favorite YouTube link above!</p>
+
+    <!-- Messaging Board -->
+    <h2>Leave a Message</h2>
+    <form id="messageForm">
+        <input type="text" id="messageInput" placeholder="Type your message" required>
+        <button type="submit">Post</button>
+    </form>
+    <div id="messages"></div>
+
+    <!-- Supabase Placeholder -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        console.log("Site loaded! Supabase setup next.");
+    </script>
+</body>
+</html>
