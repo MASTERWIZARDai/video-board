@@ -1,33 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>MASTERWIZARDai's Video & Message Board</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTERWIZARDai's Website</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
-        .message { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
-        #messageForm { margin: 20px 0; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Video & Message Board</h1>
-
-    <!-- YouTube Video Embed -->
-    <h2>Watch This Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-    <p>Add your favorite YouTube link above!</p>
-
-    <!-- Messaging Board -->
-    <h2>Leave a Message</h2>
-    <form id="messageForm">
-        <input type="text" id="messageInput" placeholder="Type your message" required>
-        <button type="submit">Post</button>
-    </form>
-    <div id="messages"></div>
-
-    <!-- Supabase Placeholder -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    <script>
-        console.log("Site loaded! Supabase setup next.");
-    </script>
+    <header>
+        <h1>MASTERWIZARDai</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Welcome to My Website!</h2>
+        <p>Hey there! I’m MASTERWIZARDai, and this is my little corner of the internet. I’m experimenting with websites, AI, and cool tech stuff. Stick around, and let’s see what I build next!</p>
+    </div>
+    <footer>
+        <p>Made with curiosity | © 2025 MASTERWIZARDai</p>
+    </footer>
 </body>
 </html>
